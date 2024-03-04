@@ -15,7 +15,7 @@ public class game extends JFrame implements ActionListener {
         setVisible(true); // 设置窗口可见
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // 关闭界面同时停止运行程序
         setResizable(false); // 不可改变窗口大小
-        setTitle("OX,王跃坤"); // 标题
+        setTitle("Axisoft-exercise1"); // 标题
         setLayout(null); // 取消布局管理器
 
         for (int a = 0; a < 3; a++) {

@@ -6,6 +6,7 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
+//ActionListener 接口是 Java AWT 和 Swing GUI 库中的一个事件监听器接口，用于处理用户界面中发生的动作事件
 public class game extends JFrame implements ActionListener {
     private static JButton[][] checker = new JButton[3][3];
     private static int[][] judge = new int[3][3];
@@ -141,6 +142,8 @@ public class game extends JFrame implements ActionListener {
             }
         }
     }
+
+//    cur 和 ans 是两个参数，用于指示当前检查的状态和期望的结果。cur：表示当前检查的状态。ans：表示期望的结果
     public static int check(int cur,int ans) {
         if(ans>1||ans<-1) {
             if(judge[1][0]+judge[1][1]+judge[1][2]==ans) {
